@@ -16,7 +16,7 @@ public class PatrolBehaviour : MonoBehaviour
     public float speedLookAt= 0.2f;
 
     int maxWaypoints = 0;
-    int currentIndex = 1;
+    public int currentIndex = 1;
     float distance;
     
     private void Start()
