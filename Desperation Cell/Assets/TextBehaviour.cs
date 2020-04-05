@@ -47,7 +47,7 @@ public class TextBehaviour : MonoBehaviour
                     }
                 case TextType.GET_OBJECT:
                     {
-                        text.text = "HAS RECOGIDO EL SIGUIENTE OJECTO: " + _object;
+                        text.text = "HAS RECOGIDO EL SIGUIENTE OBJETO: " + _object;
                         canvas.SetActive(true);
                         Invoke("DeactivateText", timeShowingText);
                         break;
