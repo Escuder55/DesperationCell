@@ -75,6 +75,7 @@
     <Compile Include="Assets\Scripts\PatrolBehaviour.cs" />
     <Compile Include="Assets\Scripts\SelectObject.cs" />
     <Compile Include="Assets\Scripts\SimpleCameraController.cs" />
+    <Compile Include="Assets\TextBehaviour.cs" />
     <None Include="Assets\Shaders\AlwaysVisible.shader" />
     <None Include="Assets\Demigiant\DOTween\readme.txt" />
     <Reference Include="Unity.RenderPipeline.Universal.ShaderLibrary">
