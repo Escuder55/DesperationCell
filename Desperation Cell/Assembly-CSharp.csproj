@@ -69,11 +69,12 @@
     <Compile Include="Assets\Demigiant\DOTween\Modules\DOTweenModuleUI.cs" />
     <Compile Include="Assets\Demigiant\DOTween\Modules\DOTweenModuleUnityVersion.cs" />
     <Compile Include="Assets\Demigiant\DOTween\Modules\DOTweenModuleUtils.cs" />
-    <Compile Include="Assets\FollowCharacter.cs" />
     <Compile Include="Assets\Info\TutorialInfo\Scripts\Readme.cs" />
-    <Compile Include="Assets\PatrolBehaviour.cs" />
+    <Compile Include="Assets\Scripts\FollowCharacter.cs" />
+    <Compile Include="Assets\Scripts\KillPlayer.cs" />
+    <Compile Include="Assets\Scripts\PatrolBehaviour.cs" />
+    <Compile Include="Assets\Scripts\SelectObject.cs" />
     <Compile Include="Assets\Scripts\SimpleCameraController.cs" />
-    <Compile Include="Assets\SelectObject.cs" />
     <None Include="Assets\Shaders\AlwaysVisible.shader" />
     <None Include="Assets\Demigiant\DOTween\readme.txt" />
     <Reference Include="Unity.RenderPipeline.Universal.ShaderLibrary">
