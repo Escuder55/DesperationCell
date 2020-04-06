@@ -40,121 +40,128 @@ public class SelectObject : MonoBehaviour
     [SerializeField] GameObject toRight;
     [SerializeField] GameObject toLeft;
 
+    //POINT FOR CHARACTER
+    [SerializeField] Transform pointForPlayer;
+
     public void OnMouseOver()
     {
         outliner.SetActive(true);
+        if (Input.GetMouseButtonDown(0))
+        {            
+            Player.GetComponent<PlayerController>().interactuableClicked(pointForPlayer,this);
+        }
+    }
 
-        switch(objects)
+    public void DoAction()
+    {
+        switch (objects)
         {
             case TypeInterectuable.OBJECTS:
-                if (Input.GetMouseButtonDown(0))
+
+                switch (type)
                 {
-                    switch (type)
-                    {
-                        case TypeObject.ROCK:
-                            Hide.SetActive(false);
-                            imageRock.SetActive(true);
+                    case TypeObject.ROCK:
+                        Hide.SetActive(false);
+                        imageRock.SetActive(true);
 
-                            refScript.GetComponentInChildren<Inventory>().Rock = true;
+                        refScript.GetComponentInChildren<Inventory>().Rock = true;
 
-                            break;
-                        case TypeObject.BONE:
+                        break;
+                    case TypeObject.BONE:
 
-                            if(refScript.GetComponentInChildren<Inventory>().Rock == true)
+                        if (refScript.GetComponentInChildren<Inventory>().Rock == true)
+                        {
+                            if (!Taken)
                             {
-                                if (!Taken)
-                                {
-                                    imageBone.SetActive(true);
-                                    imageRock.SetActive(false);
-                                    refScript.GetComponentInChildren<Inventory>().Bone = true;
-                                    refScript.GetComponentInChildren<Inventory>().Rock = false;
-                                    Taken = true;
-                                }
+                                imageBone.SetActive(true);
+                                imageRock.SetActive(false);
+                                refScript.GetComponentInChildren<Inventory>().Bone = true;
+                                refScript.GetComponentInChildren<Inventory>().Rock = false;
+                                Taken = true;
                             }
+                        }
 
-                            break;
-                        case TypeObject.HAMMER:
-                            Hide.SetActive(false);
-                            imageHammer.SetActive(true);
+                        break;
+                    case TypeObject.HAMMER:
+                        Hide.SetActive(false);
+                        imageHammer.SetActive(true);
 
-                            refScript.GetComponentInChildren<Inventory>().Hammer = true;
+                        refScript.GetComponentInChildren<Inventory>().Hammer = true;
 
-                            break;
-                        case TypeObject.STICK:
-                            Hide.SetActive(false);
-                            imageStick.SetActive(true);
+                        break;
+                    case TypeObject.STICK:
+                        Hide.SetActive(false);
+                        imageStick.SetActive(true);
 
-                            refScript.GetComponentInChildren<Inventory>().Stick = true;
+                        refScript.GetComponentInChildren<Inventory>().Stick = true;
 
-                            break;
-                        default:
-                            break;
-                    }
-                }               
+                        break;
+                    default:
+                        break;
+                }
+
                 break;
             case TypeInterectuable.MOVABLE:
-                if (Input.GetMouseButtonDown(0))
-                {
-                    MoveObject();
-                }
+
+                MoveObject();
+
                 break;
             case TypeInterectuable.INTERACTUABLE:
-                if (Input.GetMouseButtonDown(0))
+
+                switch (use)
                 {
-                    switch(use)
-                    {
-                        case Uso.DOOR:
-                            if (refScript.GetComponentInChildren<Inventory>().Bone == true)
+                    case Uso.DOOR:
+                        if (refScript.GetComponentInChildren<Inventory>().Bone == true)
+                        {
+                            imageBone.SetActive(false);
+                            Hide.SetActive(false);
+                            refScript.GetComponentInChildren<Inventory>().Bone = false;
+                        }
+                        break;
+                    case Uso.WALL:
+
+                        if (!Falled)
+                        {
+                            imageHammer.SetActive(false);
+                            refScript.GetComponentInChildren<Inventory>().Hammer = false;
+                            MoveObject();
+                            Falled = true;
+                        }
+
+                        break;
+                    case Uso.TRAMPILLAIZQUIERDA:
+                        Player.transform.position = toRight.transform.position;
+
+                        break;
+                    case Uso.TRAMPILLADERECHA:
+                        Player.transform.position = toLeft.transform.position;
+
+                        break;
+                    case Uso.CALDERO:
+                        if (refScript.GetComponentInChildren<Inventory>().Stick == true)
+                        {
+                            if (!Fired)
                             {
-                                imageBone.SetActive(false);
-                                Hide.SetActive(false);
-                                refScript.GetComponentInChildren<Inventory>().Bone = false;
+                                imageStick.SetActive(false);
+                                imageTorch.SetActive(true);
+                                refScript.GetComponentInChildren<Inventory>().Stick = false;
+                                refScript.GetComponentInChildren<Inventory>().Torch = true;
+                                Fired = true;
                             }
-                            break;
-                        case Uso.WALL:
+                        }
 
-                            if(!Falled)
-                            {
-                                imageHammer.SetActive(false);
-                                refScript.GetComponentInChildren<Inventory>().Hammer = false;
-                                MoveObject();
-                                Falled = true;
-                            }
-
-                            break;
-                        case Uso.TRAMPILLAIZQUIERDA:
-                            Player.transform.position = toRight.transform.position;
-
-                            break;
-                        case Uso.TRAMPILLADERECHA:
-                            Player.transform.position = toLeft.transform.position;
-
-                            break;
-                        case Uso.CALDERO:
-                            if (refScript.GetComponentInChildren<Inventory>().Stick == true)
-                            {
-                                if (!Fired)
-                                {
-                                    imageStick.SetActive(false);
-                                    imageTorch.SetActive(true);
-                                    refScript.GetComponentInChildren<Inventory>().Stick = false;
-                                    refScript.GetComponentInChildren<Inventory>().Torch = true;
-                                    Fired = true;
-                                }
-                            }
-
-                            break;
-                        case Uso.DESK:
-                            if (refScript.GetComponentInChildren<Inventory>().Torch == true)
-                            {
-                                imageTorch.SetActive(false);
-                                refScript.GetComponentInChildren<Inventory>().Torch = false;
-                            }
-                            break;
-                        default:
-                            break;
-                    }
+                        break;
+                    case Uso.DESK:
+                        if (refScript.GetComponentInChildren<Inventory>().Torch == true)
+                        {
+                            imageTorch.SetActive(false);
+                            refScript.GetComponentInChildren<Inventory>().Torch = false;
+                        }
+                        break;
+                    default:
+                        break;
                 }
+
                 break;
             default:
                 break;
