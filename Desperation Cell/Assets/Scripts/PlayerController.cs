@@ -5,6 +5,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] Camera cam;
     [SerializeField] NavMeshAgent agent;
     SelectObject activateObject;
+    TextBehaviour mytext;
     bool activate = false;
     // Update is called once per frame
     void Update()
@@ -31,6 +32,8 @@ public class PlayerController : MonoBehaviour
                     if (!agent.hasPath || agent.velocity.sqrMagnitude == 0f)
                     {
                         activateObject.DoAction();
+                        if (mytext != null)
+                            mytext.DoSwitch();
                         activate = false;
                     }
                 }
@@ -40,10 +43,14 @@ public class PlayerController : MonoBehaviour
 
     
 
-    public void interactuableClicked(Transform interactuable, SelectObject gobj)
+    public void interactuableClicked(Transform interactuable, GameObject gobj)
     {
         activate = true;
-        activateObject = gobj;
+        activateObject = gobj.GetComponent<SelectObject>();
+        if (gobj.GetComponent<TextBehaviour>())
+            mytext = gobj.GetComponent<TextBehaviour>();
+        else
+            mytext = null;
         agent.SetDestination(interactuable.position);
     }
 }

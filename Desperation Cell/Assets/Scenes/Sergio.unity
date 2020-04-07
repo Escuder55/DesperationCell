@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 0
+  m_UseShadowmask: 1
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -106,7 +106,7 @@ NavMeshSettings:
   m_BuildSettings:
     serializedVersion: 2
     agentTypeID: 0
-    agentRadius: 0.25
+    agentRadius: 0.2
     agentHeight: 2
     agentSlope: 45
     agentClimb: 0.4
@@ -114,7 +114,7 @@ NavMeshSettings:
     maxJumpAcrossDistance: 0
     minRegionArea: 2
     manualCellSize: 0
-    cellSize: 0.083333336
+    cellSize: 0.06666667
     manualTileSize: 0
     tileSize: 256
     accuratePlacement: 0
@@ -1027,7 +1027,7 @@ MonoBehaviour:
   imageStick: {fileID: 1655580785}
   imageTorch: {fileID: 1921118984}
   refScript: {fileID: 2065327038}
-  Player: {fileID: 0}
+  Player: {fileID: 2065327038}
   toRight: {fileID: 0}
   toLeft: {fileID: 0}
   pointForPlayer: {fileID: 848897477}
@@ -1721,7 +1721,7 @@ MonoBehaviour:
   imageStick: {fileID: 1655580785}
   imageTorch: {fileID: 1921118984}
   refScript: {fileID: 2065327038}
-  Player: {fileID: 0}
+  Player: {fileID: 2065327038}
   toRight: {fileID: 0}
   toLeft: {fileID: 0}
   pointForPlayer: {fileID: 140973665}
@@ -2585,7 +2585,7 @@ MonoBehaviour:
   imageStick: {fileID: 1655580785}
   imageTorch: {fileID: 1921118984}
   refScript: {fileID: 2065327038}
-  Player: {fileID: 0}
+  Player: {fileID: 2065327038}
   toRight: {fileID: 0}
   toLeft: {fileID: 0}
   pointForPlayer: {fileID: 1663214337}
@@ -5827,7 +5827,7 @@ MonoBehaviour:
   imageStick: {fileID: 0}
   imageTorch: {fileID: 0}
   refScript: {fileID: 0}
-  Player: {fileID: 0}
+  Player: {fileID: 2065327038}
   toRight: {fileID: 0}
   toLeft: {fileID: 0}
   pointForPlayer: {fileID: 1914924668}
@@ -7273,7 +7273,7 @@ MonoBehaviour:
   imageStick: {fileID: 0}
   imageTorch: {fileID: 0}
   refScript: {fileID: 0}
-  Player: {fileID: 0}
+  Player: {fileID: 2065327038}
   toRight: {fileID: 0}
   toLeft: {fileID: 0}
   pointForPlayer: {fileID: 1914924668}
@@ -9152,7 +9152,7 @@ MonoBehaviour:
   imageStick: {fileID: 0}
   imageTorch: {fileID: 0}
   refScript: {fileID: 0}
-  Player: {fileID: 0}
+  Player: {fileID: 2065327038}
   toRight: {fileID: 0}
   toLeft: {fileID: 0}
   pointForPlayer: {fileID: 1568655949}
@@ -9382,7 +9382,7 @@ MonoBehaviour:
   imageStick: {fileID: 0}
   imageTorch: {fileID: 0}
   refScript: {fileID: 0}
-  Player: {fileID: 0}
+  Player: {fileID: 2065327038}
   toRight: {fileID: 0}
   toLeft: {fileID: 0}
   pointForPlayer: {fileID: 1412323850}
@@ -10073,7 +10073,7 @@ MonoBehaviour:
   imageStick: {fileID: 0}
   imageTorch: {fileID: 0}
   refScript: {fileID: 0}
-  Player: {fileID: 0}
+  Player: {fileID: 2065327038}
   toRight: {fileID: 0}
   toLeft: {fileID: 0}
   pointForPlayer: {fileID: 848897477}
@@ -10932,7 +10932,7 @@ MonoBehaviour:
   imageStick: {fileID: 0}
   imageTorch: {fileID: 0}
   refScript: {fileID: 0}
-  Player: {fileID: 0}
+  Player: {fileID: 2065327038}
   toRight: {fileID: 0}
   toLeft: {fileID: 0}
   pointForPlayer: {fileID: 2088968112}
@@ -14274,7 +14274,7 @@ MonoBehaviour:
   imageStick: {fileID: 0}
   imageTorch: {fileID: 0}
   refScript: {fileID: 0}
-  Player: {fileID: 0}
+  Player: {fileID: 2065327038}
   toRight: {fileID: 0}
   toLeft: {fileID: 0}
   pointForPlayer: {fileID: 1084484942}
@@ -15315,7 +15315,7 @@ MonoBehaviour:
   imageStick: {fileID: 0}
   imageTorch: {fileID: 0}
   refScript: {fileID: 0}
-  Player: {fileID: 0}
+  Player: {fileID: 2065327038}
   toRight: {fileID: 0}
   toLeft: {fileID: 0}
   pointForPlayer: {fileID: 684950666}
@@ -15970,7 +15970,7 @@ MonoBehaviour:
   imageStick: {fileID: 1655580785}
   imageTorch: {fileID: 1921118984}
   refScript: {fileID: 2065327038}
-  Player: {fileID: 0}
+  Player: {fileID: 2065327038}
   toRight: {fileID: 0}
   toLeft: {fileID: 0}
   pointForPlayer: {fileID: 2143350212}
@@ -16252,7 +16252,7 @@ MonoBehaviour:
   imageStick: {fileID: 1655580785}
   imageTorch: {fileID: 1921118984}
   refScript: {fileID: 2065327038}
-  Player: {fileID: 0}
+  Player: {fileID: 2065327038}
   toRight: {fileID: 0}
   toLeft: {fileID: 0}
   pointForPlayer: {fileID: 1523681957}
@@ -17691,7 +17691,7 @@ MonoBehaviour:
   imageStick: {fileID: 1655580785}
   imageTorch: {fileID: 1921118984}
   refScript: {fileID: 2065327038}
-  Player: {fileID: 0}
+  Player: {fileID: 2065327038}
   toRight: {fileID: 0}
   toLeft: {fileID: 0}
   pointForPlayer: {fileID: 1334879198}
@@ -18884,7 +18884,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: e02ff0734f795f94abcb6805ef7889f9, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 4.454
+      value: 4.49
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: e02ff0734f795f94abcb6805ef7889f9, type: 3}
       propertyPath: m_LocalPosition.y
@@ -19103,7 +19103,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 404400, guid: 2ef59bc5d753ebe4490b708befe65999, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 2.24
+      value: -11.91
       objectReference: {fileID: 0}
     - target: {fileID: 404400, guid: 2ef59bc5d753ebe4490b708befe65999, type: 3}
       propertyPath: m_LocalPosition.y
@@ -19111,7 +19111,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 404400, guid: 2ef59bc5d753ebe4490b708befe65999, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -13.9
+      value: -1.62
       objectReference: {fileID: 0}
     - target: {fileID: 404400, guid: 2ef59bc5d753ebe4490b708befe65999, type: 3}
       propertyPath: m_LocalRotation.x
@@ -20023,7 +20023,7 @@ MonoBehaviour:
   imageStick: {fileID: 0}
   imageTorch: {fileID: 0}
   refScript: {fileID: 0}
-  Player: {fileID: 0}
+  Player: {fileID: 2065327038}
   toRight: {fileID: 0}
   toLeft: {fileID: 0}
   pointForPlayer: {fileID: 1871554980}
@@ -21811,7 +21811,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: 7022ba22f485cce43922193996c8b488, type: 3}
       propertyPath: m_NavMeshLayer
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 7022ba22f485cce43922193996c8b488, type: 3}
       propertyPath: m_LocalPosition.x
@@ -23052,7 +23052,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1746930232}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 1.65}
+  m_LocalPosition: {x: -0.56, y: 0, z: 2.37}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2090122276}
@@ -24028,7 +24028,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1815582792}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.72, y: 0, z: 1.59}
+  m_LocalPosition: {x: 1.78, y: 0, z: 1.59}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2013369522}
@@ -24224,7 +24224,7 @@ MonoBehaviour:
   imageStick: {fileID: 0}
   imageTorch: {fileID: 0}
   refScript: {fileID: 0}
-  Player: {fileID: 0}
+  Player: {fileID: 2065327038}
   toRight: {fileID: 0}
   toLeft: {fileID: 0}
   pointForPlayer: {fileID: 1609218087}
@@ -26728,8 +26728,8 @@ MonoBehaviour:
   imageTorch: {fileID: 1921118984}
   refScript: {fileID: 0}
   Player: {fileID: 2065327038}
-  toRight: {fileID: 1815582792}
-  toLeft: {fileID: 1746930232}
+  toRight: {fileID: 1815582793}
+  toLeft: {fileID: 1746930233}
   pointForPlayer: {fileID: 1868758170}
 --- !u!65 &2013369525
 BoxCollider:
@@ -27068,6 +27068,42 @@ MonoBehaviour:
   Hammer: 0
   Stick: 0
   Torch: 0
+--- !u!195 &2065327041
+NavMeshAgent:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2065327038}
+  m_Enabled: 1
+  m_AgentTypeID: 0
+  m_Radius: 0.5
+  m_Speed: 3.5
+  m_Acceleration: 8
+  avoidancePriority: 50
+  m_AngularSpeed: 120
+  m_StoppingDistance: 0
+  m_AutoTraverseOffMeshLink: 1
+  m_AutoBraking: 1
+  m_AutoRepath: 1
+  m_Height: 2
+  m_BaseOffset: 0
+  m_WalkableMask: 4294967295
+  m_ObstacleAvoidanceType: 4
+--- !u!114 &2065327042
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2065327038}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0861413d3d2497544a19ada8b3285103, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cam: {fileID: 1582755725}
+  agent: {fileID: 2065327041}
 --- !u!1 &2088968111
 GameObject:
   m_ObjectHideFlags: 0
@@ -27293,8 +27329,8 @@ MonoBehaviour:
   imageTorch: {fileID: 1921118984}
   refScript: {fileID: 2065327038}
   Player: {fileID: 2065327038}
-  toRight: {fileID: 1815582792}
-  toLeft: {fileID: 1746930232}
+  toRight: {fileID: 1815582793}
+  toLeft: {fileID: 1746930233}
   pointForPlayer: {fileID: 692848264}
 --- !u!65 &2090122279
 BoxCollider:

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using DG.Tweening;
 using UnityEngine.UI;
+using UnityEngine.AI;
 
 public class SelectObject : MonoBehaviour
 {
@@ -37,8 +38,8 @@ public class SelectObject : MonoBehaviour
     [SerializeField] GameObject Player;
 
     //TELEPORT
-    [SerializeField] GameObject toRight;
-    [SerializeField] GameObject toLeft;
+    [SerializeField] Transform toRight;
+    [SerializeField] Transform toLeft;
 
     //POINT FOR CHARACTER
     [SerializeField] Transform pointForPlayer;
@@ -48,7 +49,7 @@ public class SelectObject : MonoBehaviour
         outliner.SetActive(true);
         if (Input.GetMouseButtonDown(0))
         {            
-            Player.GetComponent<PlayerController>().interactuableClicked(pointForPlayer,this);
+            Player.GetComponent<PlayerController>().interactuableClicked(pointForPlayer,this.gameObject);
         }
     }
 
@@ -131,11 +132,14 @@ public class SelectObject : MonoBehaviour
                         break;
                     case Uso.TRAMPILLAIZQUIERDA:
                         Player.transform.position = toRight.transform.position;
-
+                        //Player.transform.Translate(toRight.position);
+                        Debug.Log(toRight.transform.position);
+                        Player.GetComponent<NavMeshAgent>().SetDestination(Player.transform.position);
                         break;
                     case Uso.TRAMPILLADERECHA:
                         Player.transform.position = toLeft.transform.position;
-
+                        //Player.transform.Translate(toLeft.position);
+                        Player.GetComponent<NavMeshAgent>().SetDestination(Player.transform.position);
                         break;
                     case Uso.CALDERO:
                         if (refScript.GetComponentInChildren<Inventory>().Stick == true)
