@@ -22,39 +22,37 @@ public class TextBehaviour : MonoBehaviour
     [SerializeField] string _object;
     [Header("NOT READY")]
     [SerializeField] string textNotReady;
+   
 
-    public void OnMouseOver()
+    public void DoSwitch()
     {
-        if (Input.GetMouseButtonDown(0))
+        switch (type)
         {
-            switch (type)
-            {
-                case TextType.NONE:
+            case TextType.NONE:
+                break;
+            case TextType.NOTHING_INSIDE:
+                {
+                    text.text = "NO HAY NADA INTERESANTE";
+                    canvas.SetActive(true);
+                    Invoke("DeactivateText", 5);
                     break;
-                case TextType.NOTHING_INSIDE:
-                    {
-                        text.text = "NO HAY NADA INTERESANTE";
-                        canvas.SetActive(true);
-                        Invoke("DeactivateText", 5);
-                        break;
-                    }
-                case TextType.NOT_READY_TO_INTERACT:
-                    {
-                        text.text = textNotReady;
-                        canvas.SetActive(true);
-                        Invoke("DeactivateText", 5);
-                        break;
-                    }
-                case TextType.GET_OBJECT:
-                    {
-                        text.text = "HAS RECOGIDO EL SIGUIENTE OBJETO: " + _object;
-                        canvas.SetActive(true);
-                        Invoke("DeactivateText", timeShowingText);
-                        break;
-                    }
-                default:
+                }
+            case TextType.NOT_READY_TO_INTERACT:
+                {
+                    text.text = textNotReady;
+                    canvas.SetActive(true);
+                    Invoke("DeactivateText", 5);
                     break;
-            }
+                }
+            case TextType.GET_OBJECT:
+                {
+                    text.text = "HAS RECOGIDO EL SIGUIENTE OBJETO: " + _object;
+                    canvas.SetActive(true);
+                    Invoke("DeactivateText", timeShowingText);
+                    break;
+                }
+            default:
+                break;
         }
     }
 
