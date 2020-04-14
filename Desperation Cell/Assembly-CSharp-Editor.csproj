@@ -64,64 +64,64 @@
   <ItemGroup>
     <Compile Include="Assets\Info\TutorialInfo\Scripts\Editor\ReadmeEditor.cs" />
     <Reference Include="UnityEditor.TestRunner">
-      <HintPath>D:/AAUNI/4o/Mecaniques/Experiencias/DesperationCell/Desperation Cell/Library/ScriptAssemblies/UnityEditor.TestRunner.dll</HintPath>
+      <HintPath>D:/UNI/CUARTO/MECÁNICAS AVANZADAS/LUCAS/EXPERIENCIA/DesperationCell/Desperation Cell/Library/ScriptAssemblies/UnityEditor.TestRunner.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.TestRunner">
-      <HintPath>D:/AAUNI/4o/Mecaniques/Experiencias/DesperationCell/Desperation Cell/Library/ScriptAssemblies/UnityEngine.TestRunner.dll</HintPath>
+      <HintPath>D:/UNI/CUARTO/MECÁNICAS AVANZADAS/LUCAS/EXPERIENCIA/DesperationCell/Desperation Cell/Library/ScriptAssemblies/UnityEngine.TestRunner.dll</HintPath>
     </Reference>
     <Reference Include="Unity.RenderPipeline.Universal.ShaderLibrary">
-      <HintPath>D:/AAUNI/4o/Mecaniques/Experiencias/DesperationCell/Desperation Cell/Library/ScriptAssemblies/Unity.RenderPipeline.Universal.ShaderLibrary.dll</HintPath>
+      <HintPath>D:/UNI/CUARTO/MECÁNICAS AVANZADAS/LUCAS/EXPERIENCIA/DesperationCell/Desperation Cell/Library/ScriptAssemblies/Unity.RenderPipeline.Universal.ShaderLibrary.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Timeline.Editor">
-      <HintPath>D:/AAUNI/4o/Mecaniques/Experiencias/DesperationCell/Desperation Cell/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
+      <HintPath>D:/UNI/CUARTO/MECÁNICAS AVANZADAS/LUCAS/EXPERIENCIA/DesperationCell/Desperation Cell/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.RenderPipelines.Universal.Shaders">
-      <HintPath>D:/AAUNI/4o/Mecaniques/Experiencias/DesperationCell/Desperation Cell/Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Shaders.dll</HintPath>
+      <HintPath>D:/UNI/CUARTO/MECÁNICAS AVANZADAS/LUCAS/EXPERIENCIA/DesperationCell/Desperation Cell/Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Shaders.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VSCode.Editor">
-      <HintPath>D:/AAUNI/4o/Mecaniques/Experiencias/DesperationCell/Desperation Cell/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
+      <HintPath>D:/UNI/CUARTO/MECÁNICAS AVANZADAS/LUCAS/EXPERIENCIA/DesperationCell/Desperation Cell/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.RenderPipelines.Core.Editor">
-      <HintPath>D:/AAUNI/4o/Mecaniques/Experiencias/DesperationCell/Desperation Cell/Library/ScriptAssemblies/Unity.RenderPipelines.Core.Editor.dll</HintPath>
+      <HintPath>D:/UNI/CUARTO/MECÁNICAS AVANZADAS/LUCAS/EXPERIENCIA/DesperationCell/Desperation Cell/Library/ScriptAssemblies/Unity.RenderPipelines.Core.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.RenderPipelines.Core.Runtime">
-      <HintPath>D:/AAUNI/4o/Mecaniques/Experiencias/DesperationCell/Desperation Cell/Library/ScriptAssemblies/Unity.RenderPipelines.Core.Runtime.dll</HintPath>
+      <HintPath>D:/UNI/CUARTO/MECÁNICAS AVANZADAS/LUCAS/EXPERIENCIA/DesperationCell/Desperation Cell/Library/ScriptAssemblies/Unity.RenderPipelines.Core.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
-      <HintPath>D:/AAUNI/4o/Mecaniques/Experiencias/DesperationCell/Desperation Cell/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+      <HintPath>D:/UNI/CUARTO/MECÁNICAS AVANZADAS/LUCAS/EXPERIENCIA/DesperationCell/Desperation Cell/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.RenderPipelines.Universal.Runtime">
-      <HintPath>D:/AAUNI/4o/Mecaniques/Experiencias/DesperationCell/Desperation Cell/Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Runtime.dll</HintPath>
+      <HintPath>D:/UNI/CUARTO/MECÁNICAS AVANZADAS/LUCAS/EXPERIENCIA/DesperationCell/Desperation Cell/Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="Unity.RenderPipelines.Universal.Editor">
-      <HintPath>D:/AAUNI/4o/Mecaniques/Experiencias/DesperationCell/Desperation Cell/Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Editor.dll</HintPath>
+      <HintPath>D:/UNI/CUARTO/MECÁNICAS AVANZADAS/LUCAS/EXPERIENCIA/DesperationCell/Desperation Cell/Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Editor.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UI">
-      <HintPath>D:/AAUNI/4o/Mecaniques/Experiencias/DesperationCell/Desperation Cell/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
+      <HintPath>D:/UNI/CUARTO/MECÁNICAS AVANZADAS/LUCAS/EXPERIENCIA/DesperationCell/Desperation Cell/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Timeline">
-      <HintPath>D:/AAUNI/4o/Mecaniques/Experiencias/DesperationCell/Desperation Cell/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
+      <HintPath>D:/UNI/CUARTO/MECÁNICAS AVANZADAS/LUCAS/EXPERIENCIA/DesperationCell/Desperation Cell/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
     </Reference>
     <Reference Include="Unity.CollabProxy.Editor">
-      <HintPath>D:/AAUNI/4o/Mecaniques/Experiencias/DesperationCell/Desperation Cell/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
+      <HintPath>D:/UNI/CUARTO/MECÁNICAS AVANZADAS/LUCAS/EXPERIENCIA/DesperationCell/Desperation Cell/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Rider.Editor">
-      <HintPath>D:/AAUNI/4o/Mecaniques/Experiencias/DesperationCell/Desperation Cell/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
+      <HintPath>D:/UNI/CUARTO/MECÁNICAS AVANZADAS/LUCAS/EXPERIENCIA/DesperationCell/Desperation Cell/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary">
-      <HintPath>D:/AAUNI/4o/Mecaniques/Experiencias/DesperationCell/Desperation Cell/Library/ScriptAssemblies/Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary.dll</HintPath>
+      <HintPath>D:/UNI/CUARTO/MECÁNICAS AVANZADAS/LUCAS/EXPERIENCIA/DesperationCell/Desperation Cell/Library/ScriptAssemblies/Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary.dll</HintPath>
     </Reference>
     <Reference Include="Unity.ShaderGraph.Editor">
-      <HintPath>D:/AAUNI/4o/Mecaniques/Experiencias/DesperationCell/Desperation Cell/Library/ScriptAssemblies/Unity.ShaderGraph.Editor.dll</HintPath>
+      <HintPath>D:/UNI/CUARTO/MECÁNICAS AVANZADAS/LUCAS/EXPERIENCIA/DesperationCell/Desperation Cell/Library/ScriptAssemblies/Unity.ShaderGraph.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.RenderPipelines.Core.ShaderLibrary">
-      <HintPath>D:/AAUNI/4o/Mecaniques/Experiencias/DesperationCell/Desperation Cell/Library/ScriptAssemblies/Unity.RenderPipelines.Core.ShaderLibrary.dll</HintPath>
+      <HintPath>D:/UNI/CUARTO/MECÁNICAS AVANZADAS/LUCAS/EXPERIENCIA/DesperationCell/Desperation Cell/Library/ScriptAssemblies/Unity.RenderPipelines.Core.ShaderLibrary.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro">
-      <HintPath>D:/AAUNI/4o/Mecaniques/Experiencias/DesperationCell/Desperation Cell/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+      <HintPath>D:/UNI/CUARTO/MECÁNICAS AVANZADAS/LUCAS/EXPERIENCIA/DesperationCell/Desperation Cell/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.UI">
-      <HintPath>D:/AAUNI/4o/Mecaniques/Experiencias/DesperationCell/Desperation Cell/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+      <HintPath>D:/UNI/CUARTO/MECÁNICAS AVANZADAS/LUCAS/EXPERIENCIA/DesperationCell/Desperation Cell/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AIModule">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.3.7f1/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
@@ -309,23 +309,23 @@
     <Reference Include="UnityEditor.WindowsStandalone.Extensions">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.3.7f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll</HintPath>
     </Reference>
-    <Reference Include="UnityEditor.Android.Extensions">
-      <HintPath>C:/Program Files/Unity/Hub/Editor/2019.3.7f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll</HintPath>
+    <Reference Include="UnityEditor.WebGL.Extensions">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2019.3.7f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll</HintPath>
     </Reference>
     <Reference Include="SyntaxTree.VisualStudio.Unity.Bridge">
       <HintPath>C:/Program Files (x86)/Microsoft Visual Studio Tools for Unity/15.0/Editor/SyntaxTree.VisualStudio.Unity.Bridge.dll</HintPath>
     </Reference>
     <Reference Include="DOTween">
-      <HintPath>D:/AAUNI/4o/Mecaniques/Experiencias/DesperationCell/Desperation Cell/Assets/Demigiant/DOTween/DOTween.dll</HintPath>
+      <HintPath>D:/UNI/CUARTO/MECÁNICAS AVANZADAS/LUCAS/EXPERIENCIA/DesperationCell/Desperation Cell/Assets/Demigiant/DOTween/DOTween.dll</HintPath>
     </Reference>
     <Reference Include="DOTweenEditor">
-      <HintPath>D:/AAUNI/4o/Mecaniques/Experiencias/DesperationCell/Desperation Cell/Assets/Demigiant/DOTween/Editor/DOTweenEditor.dll</HintPath>
+      <HintPath>D:/UNI/CUARTO/MECÁNICAS AVANZADAS/LUCAS/EXPERIENCIA/DesperationCell/Desperation Cell/Assets/Demigiant/DOTween/Editor/DOTweenEditor.dll</HintPath>
     </Reference>
     <Reference Include="ICSharpCode.NRefactory">
-      <HintPath>D:/AAUNI/4o/Mecaniques/Experiencias/DesperationCell/Desperation Cell/Library/PackageCache/com.unity.render-pipelines.core@7.1.8/Editor/ShaderGenerator/ICSharpCode.NRefactory.dll</HintPath>
+      <HintPath>D:/UNI/CUARTO/MECÁNICAS AVANZADAS/LUCAS/EXPERIENCIA/DesperationCell/Desperation Cell/Library/PackageCache/com.unity.render-pipelines.core@7.1.8/Editor/ShaderGenerator/ICSharpCode.NRefactory.dll</HintPath>
     </Reference>
     <Reference Include="nunit.framework">
-      <HintPath>D:/AAUNI/4o/Mecaniques/Experiencias/DesperationCell/Desperation Cell/Library/PackageCache/com.unity.ext.nunit@1.0.0/net35/unity-custom/nunit.framework.dll</HintPath>
+      <HintPath>D:/UNI/CUARTO/MECÁNICAS AVANZADAS/LUCAS/EXPERIENCIA/DesperationCell/Desperation Cell/Library/PackageCache/com.unity.ext.nunit@1.0.0/net35/unity-custom/nunit.framework.dll</HintPath>
     </Reference>
     <Reference Include="mscorlib">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.3.7f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/mscorlib.dll</HintPath>

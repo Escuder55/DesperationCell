@@ -8,6 +8,7 @@ public class KillPlayer : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
+            Debug.Log("MATA AL PLAYER");
             SceneManager.LoadScene("Sergio");
         }
     }
