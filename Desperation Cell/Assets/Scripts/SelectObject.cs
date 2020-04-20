@@ -131,13 +131,17 @@ public class SelectObject : MonoBehaviour
 
                         break;
                     case Uso.TRAMPILLAIZQUIERDA:
+                        Player.GetComponent<NavMeshAgent>().enabled = false;
                         Player.transform.position = toRight.transform.position;
+                        Player.GetComponent<NavMeshAgent>().enabled = true;
                         //Player.transform.Translate(toRight.position);
                         Debug.Log(toRight.transform.position);
                         Player.GetComponent<NavMeshAgent>().SetDestination(Player.transform.position);
                         break;
                     case Uso.TRAMPILLADERECHA:
+                        Player.GetComponent<NavMeshAgent>().enabled = false;
                         Player.transform.position = toLeft.transform.position;
+                        Player.GetComponent<NavMeshAgent>().enabled = true;
                         //Player.transform.Translate(toLeft.position);
                         Player.GetComponent<NavMeshAgent>().SetDestination(Player.transform.position);
                         break;
