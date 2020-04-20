@@ -7,6 +7,9 @@ public class PlayerController : MonoBehaviour
     SelectObject activateObject;
     TextBehaviour mytext;
     bool activate = false;
+    [SerializeField] Animator animationChar;
+    Vector3 goTo;
+
     // Update is called once per frame
     void Update()
     {
@@ -20,8 +23,11 @@ public class PlayerController : MonoBehaviour
             {
                 //MOVE AGENT
                 agent.SetDestination(hit.point);
+                animationChar.SetBool("IsMoving", true);
                 Debug.Log(hit.point);
+                goTo = hit.point;
             }
+
             activate = false;
         }
 
@@ -34,6 +40,7 @@ public class PlayerController : MonoBehaviour
                     if (!agent.hasPath || agent.velocity.sqrMagnitude == 0f)
                     {
                         activateObject.DoAction();
+                        animationChar.SetBool("IsMoving", false);
                         if (mytext != null)
                             mytext.DoSwitch();
                         activate = false;
@@ -41,6 +48,12 @@ public class PlayerController : MonoBehaviour
                 }
             }
         }
+
+        if (Vector3.Distance(goTo, agent.transform.position) <= 0.01f)
+        {
+            animationChar.SetBool("IsMoving", false);
+        }
+
     }
 
     
