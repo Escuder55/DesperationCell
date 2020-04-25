@@ -902,6 +902,24 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 4300000, guid: d3fc24e232edee745b6f1c1c0cde1fdd, type: 3}
+--- !u!114 &52325358
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 52325353}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e366bdc28c837444f9ee375b0b0f9869, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  type: 1
+  canvas: {fileID: 478358310}
+  text: {fileID: 869916249}
+  timeShowingText: 4
+  _object: LLAVE
+  textNotReady: PARECE QUE NECESITO ALGO PARA ABRIR LA PUERTA
 --- !u!1001 &67820457
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1708,6 +1726,7 @@ GameObject:
   - component: {fileID: 101778550}
   - component: {fileID: 101778549}
   - component: {fileID: 101778553}
+  - component: {fileID: 101778554}
   m_Layer: 0
   m_Name: TorchINT
   m_TagString: Untagged
@@ -1821,6 +1840,24 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.22843987, y: 0.80234826, z: 0.20259786}
   m_Center: {x: 0.0000000025447235, y: -0.04269338, z: -0.0000000014906649}
+--- !u!114 &101778554
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 101778548}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e366bdc28c837444f9ee375b0b0f9869, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  type: 2
+  canvas: {fileID: 478358310}
+  text: {fileID: 869916249}
+  timeShowingText: 4
+  _object: LLAVE
+  textNotReady: Con este baston me podria cocinar unos huevos
 --- !u!1001 &105020314
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3352,6 +3389,24 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1.1175615, y: 0.6517363, z: 0.99915034}
   m_Center: {x: 0.000000059604645, y: 0.31920823, z: -0.0049266517}
+--- !u!114 &225514771
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 225514766}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e366bdc28c837444f9ee375b0b0f9869, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  type: 2
+  canvas: {fileID: 478358310}
+  text: {fileID: 869916249}
+  timeShowingText: 4
+  _object: LLAVE
+  textNotReady: Aqui me podria hacer unos huevos fritos!
 --- !u!1 &240675520
 GameObject:
   m_ObjectHideFlags: 0
@@ -5962,6 +6017,7 @@ GameObject:
   - component: {fileID: 441722311}
   - component: {fileID: 441722310}
   - component: {fileID: 441722313}
+  - component: {fileID: 441722314}
   m_Layer: 0
   m_Name: SM_Env_Door_Large_Wood_02
   m_TagString: Untagged
@@ -6075,6 +6131,24 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1.7443619, y: 4.612174, z: 0.7845526}
   m_Center: {x: 0.78089565, y: 2.306087, z: 0}
+--- !u!114 &441722314
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 441722308}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e366bdc28c837444f9ee375b0b0f9869, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  type: 2
+  canvas: {fileID: 478358310}
+  text: {fileID: 869916249}
+  timeShowingText: 4
+  _object: Puerta
+  textNotReady: Finally!
 --- !u!1 &445463611 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100000, guid: de31136d42ebe6b4a896b248bb39d41e,
@@ -7211,6 +7285,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: IdleEnemy
       objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: fcbccbce01d123542987bcf1b6a83639,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fcbccbce01d123542987bcf1b6a83639, type: 3}
 --- !u!4 &488641678 stripped
@@ -7540,6 +7619,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: IdleEnemy
       objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: fcbccbce01d123542987bcf1b6a83639,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fcbccbce01d123542987bcf1b6a83639, type: 3}
 --- !u!4 &532570847 stripped
@@ -7669,6 +7753,7 @@ GameObject:
   - component: {fileID: 537251206}
   - component: {fileID: 537251205}
   - component: {fileID: 537251208}
+  - component: {fileID: 537251209}
   m_Layer: 0
   m_Name: SM_Env_Door_Large_Wood_02 (1)
   m_TagString: Untagged
@@ -7781,6 +7866,24 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1.7443619, y: 4.612174, z: 0.7845526}
   m_Center: {x: 0.78089523, y: 2.306087, z: 0}
+--- !u!114 &537251209
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 537251203}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e366bdc28c837444f9ee375b0b0f9869, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  type: 2
+  canvas: {fileID: 478358310}
+  text: {fileID: 869916249}
+  timeShowingText: 4
+  _object: Puerta
+  textNotReady: Finally!
 --- !u!1 &548442398
 GameObject:
   m_ObjectHideFlags: 0
@@ -8074,7 +8177,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 112422, guid: 8cd752dc36d412b4bba2efd06775153a, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 407186, guid: 8cd752dc36d412b4bba2efd06775153a, type: 3}
       propertyPath: m_LocalPosition.x
@@ -10533,6 +10636,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: IdleEnemy
       objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: fcbccbce01d123542987bcf1b6a83639,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fcbccbce01d123542987bcf1b6a83639, type: 3}
 --- !u!1 &792491792 stripped
@@ -11450,6 +11558,24 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 4300000, guid: 89464c3941cf6f34683d2ec3d696ca36, type: 3}
+--- !u!114 &846347079
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 846347074}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e366bdc28c837444f9ee375b0b0f9869, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  type: 1
+  canvas: {fileID: 478358310}
+  text: {fileID: 869916249}
+  timeShowingText: 4
+  _object: LLAVE
+  textNotReady: PARECE QUE NECESITO ALGO PARA ABRIR LA PUERTA
 --- !u!1001 &846579447
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -13945,11 +14071,75 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 224672131}
     m_Modifications:
+    - target: {fileID: 108848, guid: 8cd752dc36d412b4bba2efd06775153a, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 112422, guid: 8cd752dc36d412b4bba2efd06775153a, type: 3}
       propertyPath: m_Name
       value: Character_Goblin_Warrior_Male
       objectReference: {fileID: 0}
     - target: {fileID: 112422, guid: 8cd752dc36d412b4bba2efd06775153a, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 118700, guid: 8cd752dc36d412b4bba2efd06775153a, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 120272, guid: 8cd752dc36d412b4bba2efd06775153a, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 120406, guid: 8cd752dc36d412b4bba2efd06775153a, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 125830, guid: 8cd752dc36d412b4bba2efd06775153a, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 129368, guid: 8cd752dc36d412b4bba2efd06775153a, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 138738, guid: 8cd752dc36d412b4bba2efd06775153a, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 151886, guid: 8cd752dc36d412b4bba2efd06775153a, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 151996, guid: 8cd752dc36d412b4bba2efd06775153a, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 156404, guid: 8cd752dc36d412b4bba2efd06775153a, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 162040, guid: 8cd752dc36d412b4bba2efd06775153a, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 169918, guid: 8cd752dc36d412b4bba2efd06775153a, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 171260, guid: 8cd752dc36d412b4bba2efd06775153a, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 192946, guid: 8cd752dc36d412b4bba2efd06775153a, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 195562, guid: 8cd752dc36d412b4bba2efd06775153a, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 198966, guid: 8cd752dc36d412b4bba2efd06775153a, type: 3}
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
@@ -14816,6 +15006,24 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 4300000, guid: d3fc24e232edee745b6f1c1c0cde1fdd, type: 3}
+--- !u!114 &1104856630
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1104856625}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e366bdc28c837444f9ee375b0b0f9869, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  type: 1
+  canvas: {fileID: 478358310}
+  text: {fileID: 869916249}
+  timeShowingText: 4
+  _object: LLAVE
+  textNotReady: PARECE QUE NECESITO ALGO PARA ABRIR LA PUERTA
 --- !u!1001 &1109486073
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -16537,6 +16745,24 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.22352794, y: 0.9516227, z: 0.22981524}
   m_Center: {x: -0.0041923528, y: 0.27802143, z: -0.00000011920929}
+--- !u!114 &1212273363
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1212273357}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e366bdc28c837444f9ee375b0b0f9869, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  type: 2
+  canvas: {fileID: 478358310}
+  text: {fileID: 869916249}
+  timeShowingText: 3
+  _object: Hammer
+  textNotReady: Hmm.... Podria distraerlos golpeandolos con esto?... mejor otro dia
 --- !u!1001 &1213005227
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -18270,6 +18496,24 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1.7839553, y: 1.953007, z: 0.3430279}
   m_Center: {x: -0.3327286, y: 0.38293496, z: 0}
+--- !u!114 &1307487966
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1307487961}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e366bdc28c837444f9ee375b0b0f9869, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  type: 2
+  canvas: {fileID: 478358310}
+  text: {fileID: 869916249}
+  timeShowingText: 3
+  _object: Pared
+  textNotReady: Vaya! Parece que esta pared se va a derrumbar por si sola.
 --- !u!1001 &1309645821
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -18482,6 +18726,24 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 4300000, guid: 89464c3941cf6f34683d2ec3d696ca36, type: 3}
+--- !u!114 &1309766671
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1309766666}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e366bdc28c837444f9ee375b0b0f9869, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  type: 1
+  canvas: {fileID: 478358310}
+  text: {fileID: 869916249}
+  timeShowingText: 4
+  _object: LLAVE
+  textNotReady: PARECE QUE NECESITO ALGO PARA ABRIR LA PUERTA
 --- !u!1 &1310241270
 GameObject:
   m_ObjectHideFlags: 0
@@ -20352,7 +20614,7 @@ PrefabInstance:
     - target: {fileID: -4216859302048453862, guid: 496ca76ac31d57b45b78436889c699e4,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1.0981288
+      value: -6.2
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 496ca76ac31d57b45b78436889c699e4,
         type: 3}
@@ -20362,7 +20624,7 @@ PrefabInstance:
     - target: {fileID: -4216859302048453862, guid: 496ca76ac31d57b45b78436889c699e4,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -14.73233
+      value: 1.04
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 496ca76ac31d57b45b78436889c699e4,
         type: 3}
@@ -24630,6 +24892,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 187754, guid: 388fa61abd880a549864058f895c8045, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 497534, guid: 388fa61abd880a549864058f895c8045, type: 3}
       propertyPath: m_LocalPosition.x
       value: 5.8529124
@@ -28588,6 +28854,24 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1.8078518, y: 0.32073852, z: 1.7357817}
   m_Center: {x: 0, y: 0.16036926, z: 0}
+--- !u!114 &2090122280
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2090122277}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e366bdc28c837444f9ee375b0b0f9869, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  type: 2
+  canvas: {fileID: 478358310}
+  text: {fileID: 869916249}
+  timeShowingText: 3
+  _object: Trampilla
+  textNotReady: A lo mejor llego a mi casa por aqui... Caram!, pues no
 --- !u!1 &2092806545
 GameObject:
   m_ObjectHideFlags: 0
