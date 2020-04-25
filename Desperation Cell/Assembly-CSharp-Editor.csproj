@@ -63,6 +63,15 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Info\TutorialInfo\Scripts\Editor\ReadmeEditor.cs" />
+    <Compile Include="Assets\MaterialUI\Editor\CheckboxConfigEditor.cs" />
+    <Compile Include="Assets\MaterialUI\Editor\EZAnimEditor.cs" />
+    <Compile Include="Assets\MaterialUI\Editor\MaterialUIEditorTools.cs" />
+    <Compile Include="Assets\MaterialUI\Editor\RectTransformSnapEditor.cs" />
+    <Compile Include="Assets\MaterialUI\Editor\RippleConfigEditor.cs" />
+    <Compile Include="Assets\MaterialUI\Editor\ScreenConfigEditor.cs" />
+    <Compile Include="Assets\MaterialUI\Editor\ShadowGenEditor.cs" />
+    <Compile Include="Assets\MaterialUI\Editor\SnapButtonToTextEditor.cs" />
+    <Compile Include="Assets\MaterialUI\Editor\TexturePostProcessor.cs" />
     <Reference Include="UnityEditor.TestRunner">
       <HintPath>D:/UNI/CUARTO/MECÁNICAS AVANZADAS/LUCAS/EXPERIENCIA/DesperationCell/Desperation Cell/Library/ScriptAssemblies/UnityEditor.TestRunner.dll</HintPath>
     </Reference>
