@@ -4,12 +4,17 @@ public class PlayerController : MonoBehaviour
 {
     [SerializeField] Camera cam;
     [SerializeField] NavMeshAgent agent;
+    [SerializeField] Animator animatorCharacter;
     SelectObject activateObject;
     TextBehaviour mytext;
     bool activate = false;
+
+    bool isWalking = false;
+    Vector3 currentDestination;
     // Update is called once per frame
     void Update()
     {
+        
         if (Input.GetMouseButtonDown(1))
         {
             Ray ray = cam.ScreenPointToRay(Input.mousePosition);
@@ -20,7 +25,11 @@ public class PlayerController : MonoBehaviour
             {
                 //MOVE AGENT
                 agent.SetDestination(hit.point);
-                Debug.Log(hit.point);
+                currentDestination = hit.point;
+                isWalking = true;
+                animatorCharacter.SetBool("IdleLoop", false);
+                animatorCharacter.SetBool("WalkingLoop", true);
+                //Debug.Log(hit.point);
             }
             activate = false;
         }
@@ -41,6 +50,8 @@ public class PlayerController : MonoBehaviour
                 }
             }
         }
+
+        
     }
 
     
