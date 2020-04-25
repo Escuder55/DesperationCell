@@ -11,10 +11,20 @@ public class PlayerController : MonoBehaviour
 
     bool isWalking = false;
     Vector3 currentDestination;
+    float minDistance = 0.25f;
     // Update is called once per frame
     void Update()
     {
-        
+
+        if (isWalking)
+        {
+            if (Vector3.Distance(currentDestination, this.transform.position) <= minDistance)
+            {
+                isWalking = false;
+                animatorCharacter.SetBool("IdleLoop", true);
+                animatorCharacter.SetBool("WalkingLoop", false);
+            }
+        }
         if (Input.GetMouseButtonDown(1))
         {
             Ray ray = cam.ScreenPointToRay(Input.mousePosition);
@@ -29,7 +39,7 @@ public class PlayerController : MonoBehaviour
                 isWalking = true;
                 animatorCharacter.SetBool("IdleLoop", false);
                 animatorCharacter.SetBool("WalkingLoop", true);
-                //Debug.Log(hit.point);
+
             }
             activate = false;
         }
@@ -65,5 +75,11 @@ public class PlayerController : MonoBehaviour
         else
             mytext = null;
         agent.SetDestination(interactuable.position);
+
+        currentDestination = interactuable.position;
+
+        isWalking = true;
+        animatorCharacter.SetBool("IdleLoop", false);
+        animatorCharacter.SetBool("WalkingLoop", true);
     }
 }
