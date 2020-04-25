@@ -123,6 +123,7 @@
     <Compile Include="Assets\Scripts\SelectObject.cs" />
     <Compile Include="Assets\Scripts\SimpleCameraController.cs" />
     <Compile Include="Assets\TextBehaviour.cs" />
+    <Compile Include="Assets\script.cs" />
     <None Include="Assets\MaterialUI\Fonts\NOTICE.txt" />
     <None Include="Assets\Shaders\AlwaysVisible.shader" />
     <None Include="Assets\Demigiant\DOTween\readme.txt" />

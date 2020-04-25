@@ -44,6 +44,14 @@ public class SelectObject : MonoBehaviour
     //POINT FOR CHARACTER
     [SerializeField] Transform pointForPlayer;
 
+    //FUEGO
+    [SerializeField] GameObject Fire;
+
+    //LUGAR ENEMIGOS
+    [SerializeField] GameObject EnemiesGoTo;
+    [SerializeField] GameObject Enemy1;
+    [SerializeField] GameObject Enemy2;
+
     public void OnMouseOver()
     {
         outliner.SetActive(true);
@@ -64,20 +72,20 @@ public class SelectObject : MonoBehaviour
                     case TypeObject.ROCK:
                         Hide.SetActive(false);
                         imageRock.SetActive(true);
-
-                        refScript.GetComponentInChildren<Inventory>().Rock = true;
+                        refScript.GetComponent<Inventory>().Rock = true;
 
                         break;
                     case TypeObject.BONE:
 
-                        if (refScript.GetComponentInChildren<Inventory>().Rock == true)
+                        Debug.Log("Latiene");
+                        if (refScript.GetComponent<Inventory>().Rock == true)
                         {
                             if (!Taken)
                             {
                                 imageBone.SetActive(true);
                                 imageRock.SetActive(false);
-                                refScript.GetComponentInChildren<Inventory>().Bone = true;
-                                refScript.GetComponentInChildren<Inventory>().Rock = false;
+                                refScript.GetComponent<Inventory>().Bone = true;
+                                refScript.GetComponent<Inventory>().Rock = false;
                                 Taken = true;
                             }
                         }
@@ -87,14 +95,14 @@ public class SelectObject : MonoBehaviour
                         Hide.SetActive(false);
                         imageHammer.SetActive(true);
 
-                        refScript.GetComponentInChildren<Inventory>().Hammer = true;
+                        refScript.GetComponent<Inventory>().Hammer = true;
 
                         break;
                     case TypeObject.STICK:
                         Hide.SetActive(false);
                         imageStick.SetActive(true);
 
-                        refScript.GetComponentInChildren<Inventory>().Stick = true;
+                        refScript.GetComponent<Inventory>().Stick = true;
 
                         break;
                     default:
@@ -112,21 +120,23 @@ public class SelectObject : MonoBehaviour
                 switch (use)
                 {
                     case Uso.DOOR:
-                        if (refScript.GetComponentInChildren<Inventory>().Bone == true)
+                        if (refScript.GetComponent<Inventory>().Bone == true)
                         {
                             imageBone.SetActive(false);
                             Hide.SetActive(false);
-                            refScript.GetComponentInChildren<Inventory>().Bone = false;
+                            refScript.GetComponent<Inventory>().Bone = false;
                         }
                         break;
                     case Uso.WALL:
-
-                        if (!Falled)
+                        if (refScript.GetComponent<Inventory>().Hammer == true)
                         {
-                            imageHammer.SetActive(false);
-                            refScript.GetComponentInChildren<Inventory>().Hammer = false;
-                            MoveObject();
-                            Falled = true;
+                            if (!Falled)
+                            {
+                                imageHammer.SetActive(false);
+                                refScript.GetComponent<Inventory>().Hammer = false;
+                                MoveObject();
+                                Falled = true;
+                            }
                         }
 
                         break;
@@ -146,24 +156,32 @@ public class SelectObject : MonoBehaviour
                         Player.GetComponent<NavMeshAgent>().SetDestination(Player.transform.position);
                         break;
                     case Uso.CALDERO:
-                        if (refScript.GetComponentInChildren<Inventory>().Stick == true)
+                        if (refScript.GetComponent<Inventory>().Stick == true)
                         {
                             if (!Fired)
                             {
                                 imageStick.SetActive(false);
                                 imageTorch.SetActive(true);
-                                refScript.GetComponentInChildren<Inventory>().Stick = false;
-                                refScript.GetComponentInChildren<Inventory>().Torch = true;
+                                refScript.GetComponent<Inventory>().Stick = false;
+                                refScript.GetComponent<Inventory>().Torch = true;
                                 Fired = true;
                             }
                         }
 
                         break;
                     case Uso.DESK:
-                        if (refScript.GetComponentInChildren<Inventory>().Torch == true)
+                        if (refScript.GetComponent<Inventory>().Torch == true)
                         {
                             imageTorch.SetActive(false);
-                            refScript.GetComponentInChildren<Inventory>().Torch = false;
+                            refScript.GetComponent<Inventory>().Torch = false;
+
+                            //FUEGO
+                            Fire.SetActive(true);
+
+                            //MOVIMIENTO ENEMIGOS
+                            Enemy1.GetComponent<NavMeshAgent>().SetDestination(EnemiesGoTo.transform.position);
+                            Enemy2.GetComponent<NavMeshAgent>().SetDestination(EnemiesGoTo.transform.position);
+
                         }
                         break;
                     default:
