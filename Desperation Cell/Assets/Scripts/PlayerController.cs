@@ -20,7 +20,7 @@ public class PlayerController : MonoBehaviour
             {
                 //MOVE AGENT
                 agent.SetDestination(hit.point);
-                Debug.Log(hit.point);
+                //Debug.Log(hit.point);
             }
             activate = false;
         }
