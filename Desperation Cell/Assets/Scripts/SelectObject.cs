@@ -1,8 +1,5 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using DG.Tweening;
 using UnityEngine;
-using DG.Tweening;
-using UnityEngine.UI;
 using UnityEngine.AI;
 
 public class SelectObject : MonoBehaviour
@@ -43,6 +40,14 @@ public class SelectObject : MonoBehaviour
 
     //POINT FOR CHARACTER
     [SerializeField] Transform pointForPlayer;
+
+    //FUEGO
+    [SerializeField] GameObject Fire;
+
+    //LUGAR ENEMIGOS
+    [SerializeField] GameObject EnemiesGoTo;
+    [SerializeField] GameObject Enemy1;
+    [SerializeField] GameObject Enemy2;
 
     public void OnMouseOver()
     {
@@ -120,13 +125,15 @@ public class SelectObject : MonoBehaviour
                         }
                         break;
                     case Uso.WALL:
-
-                        if (!Falled)
+                        if (refScript.GetComponentInChildren<Inventory>().Hammer == true)
                         {
-                            imageHammer.SetActive(false);
-                            refScript.GetComponentInChildren<Inventory>().Hammer = false;
-                            MoveObject();
-                            Falled = true;
+                            if (!Falled)
+                            {
+                                imageHammer.SetActive(false);
+                                refScript.GetComponentInChildren<Inventory>().Hammer = false;
+                                MoveObject();
+                                Falled = true;
+                            }
                         }
 
                         break;
@@ -164,6 +171,14 @@ public class SelectObject : MonoBehaviour
                         {
                             imageTorch.SetActive(false);
                             refScript.GetComponentInChildren<Inventory>().Torch = false;
+
+                            //FUEGO
+                            Fire.SetActive(true);
+
+                            //MOVIMIENTO ENEMIGOS
+                            Enemy1.GetComponent<NavMeshAgent>().SetDestination(EnemiesGoTo.transform.position);
+                            Enemy2.GetComponent<NavMeshAgent>().SetDestination(EnemiesGoTo.transform.position);
+
                         }
                         break;
                     default:
